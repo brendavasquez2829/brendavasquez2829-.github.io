@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Casa Bonita Bed & Breakfast</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Make a reservation at Casa Bonita Bed and Breakfast.">
+<link href="styles/styles.css" rel="stylesheet">
+
+</head>
+<body>
+<div id="wrapper">
+  <header>
+      <h1>Casa Bonita Bed & Breakfast</h1>
+  </header>
+  <nav>
+  <ul> 
+    <li><a href="index.html">Home</a></li>
+	<li><a href="rooms/la_flor.html">La Flor</a></li>
+	<li><a href="rooms/la_mariposa.html">La Mariposa</a></li>
+	<li><a href="events/special_events.html">Special Events</a></li>
+	<li><a href="contact.html">Contact</a></li>
+    <li><a href="reservations.html">Reservations</a></li>
+  </ul>
+  </nav>
+  <main>
+  <h2>Make a Reservation</h2>
+  <h3>Room Rates</h3>
+  <table>
+    <tr>
+      <th>Room Name</th>
+      <th>Price Per Night</th>
+    </tr>
+    <tr>
+      <td>La Flor</td>
+      <td>$120</td>
+    </tr>
+    <tr>
+      <td>La Mariposa</td>
+      <td>$140</td>
+    </tr>
+  </table>
+  <p>Please complete the form below to reserve your stay.</p>
+  <form action="#" method="post">
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required>
+        
+        <br><br>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <br><br>
+
+        <label for="checkin">Check-In Date:</label>
+        <input type="date" id="checkin" name="checkin" required>
+
+        <br><br>
+
+        <label for="checkout">Check-Out Date:</label>
+        <input type="date" id="checkout" name="checkout" required>
+
+        <br><br>
+
+        <label for="room">Select Your Room:</label>
+        <select id="room" name="room">
+            <option value="" selected disabled>Please select a room</option>
+            <option value="la-flor">La Flor</option>
+            <option value="la-mariposa">La Mariposa</option>
+        </select>
+
+        <br><br>
+
+        <p>Additional Services:</p>
+
+        <input type="checkbox" id="breakfast" name="services" value="breakfast">
+        <label for="breakfast">Special Breakfast</label>
+
+        <br>
+
+        <input type="checkbox" id="decorations" name="services" value="decorations">
+        <label for="decorations">Room Decorations</label>
+
+        <br><br>
+
+        <label for="requests">Special Requests:</label>
+        <textarea id="requests" name="requests" rows="4" cols="40"></textarea>
+
+        <br><br>
+        <input type="submit" value="Submit Reservation">
+
+  </form>
+  </main>
+  <footer>
+  Copyright &copy; 2026 <br>
+  <a href="mailto:bmvasquez@amarillocollege.com">Brenda Vasquez</a>
+  </footer>
+</div>
+</body>
+</html>

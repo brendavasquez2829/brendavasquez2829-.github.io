@@ -1,0 +1,134 @@
+header, nav, main, footer { display: block; }
+body { background-color: #CB7344;
+       font-family: Verdana, Arial, sans-serif;
+}
+#wrapper { width: 960px;
+           margin: auto;
+		   background-color: #FFF4E0;
+		   color: #B83A68;
+		   box-shadow: 5px 5px 5px #6B3E26;
+}
+h1 { background-image: url(images/logo.gif);
+     background-repeat: no-repeat;
+     background-color: #E8C69C;
+       height: auto;
+        min-height: 110px;
+	 font-family: Georgia, "Times New Roman", serif;
+	 font-size: 3.8em;
+     padding: 25px 20px;
+	 text-align: center;
+	 text-shadow: 3px 3px 3px #6B3E26;
+	 margin: 60px 0 0;
+}
+nav { padding-top: 10px;
+      float: left;
+      width: 200px; 
+}
+nav ul { list-style-type: none; 
+       padding-left: 20px;
+	 }
+nav li { padding-bottom: 5px;
+       font-weight: bold;
+}
+nav a { text-decoration: none; }
+nav a:link { color: #8B2F2F; }
+nav a:visited{ color: #718355; }
+nav a:hover { color: #D9A441; }
+
+
+main { background-color: #FFF4E0;
+          margin-left: 200px;
+          padding: 1px 20px 20px 20px;   
+		  min-height: 300px;
+}
+main img { float: right;
+              padding: 20px;
+}
+
+footer { background-color: #E8C69C;
+       margin-left: 200px;
+       padding: 20px;
+       text-align: center;
+	   font-size: small;
+	   font-style: italic;
+}
+
+.flor-image {
+       width: 100%;
+       max-width: 700px;
+       height: auto;
+       display: block;
+       margin: 20px auto;
+       border-radius: 8px;
+}
+
+.mariposa-image {
+       width: 100%;
+       max-width: 700px;
+       height: auto;
+       display: block;
+       margin: 20px auto; 
+       border-radius: 8px;
+}
+
+nav a {
+       color: #8B3A62;
+       text-decoration: none;
+       padding: 8px 12px;
+       display: inline-block;
+}	  
+
+nav a:hover {
+       color: #FFFFFF;
+       background-color: #8B3A62;
+       text-decoration: underline;
+}
+
+nav a:focus {
+       color: #FFFFFF;
+       background-color: #8B3A62;
+       outline: 2px solid #DDA0B5;
+}
+
+nav a:active {
+       color: #FFFFFF;
+       background-color: #5C2340;
+}
+
+/* Responsive Design */
+
+img {
+       max-width: 100%;
+       height: auto;
+       display: block;
+       margin: 15px auto;
+}
+
+@media screen and (max-width: 768px) {
+       #wrapper {
+              width: 95%;
+              margin: auto;
+       }
+       nav ul {
+              padding: 0;
+       }
+       nav li {
+              display: block;
+              margin: 5px 0;
+       }
+       nav {
+              float: none;
+              width: 100%;
+       }
+       main {
+              float: none;
+              width: 100%;
+              margin-left: 0px;
+              padding: 10px;
+              box-sizing: border-box;
+       }
+       header h1 {
+              font-size: 30px;
+              text-align: center;
+       }
+}
